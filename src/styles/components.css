@@ -72,9 +72,14 @@
   color: var(--gray);
 }
 
+.numbering,
 .nav__numbering,
 .mobile-nav__numbering {
   font-weight: bold;
+}
+
+.numbering {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .hero,
@@ -109,13 +114,69 @@
   border: none;
 
   color: var(--dark-blue);
-  text-transform: uppercase;
 }
 
 .explore-btn:hover {
   box-shadow: 0 0 0 88px var(--gray);
   transition: 350ms;
   color: var(--dark-blue);
+}
+
+/* Destination Route */
+.destination-data,
+.destination-data__details,
+.destination-data__stats,
+.destination-data__stat {
+  display: flex;
+  flex-direction: column;
+}
+.destination-data {
+  padding: 32px 0;
+  gap: 32px;
+  text-align: center;
+  color: var(--light-blue);
+}
+
+.destination-data__image {
+  width: 150px;
+  height: 150px;
+  align-self: center;
+}
+
+.destination-data__details {
+  gap: 24px;
+}
+
+.destination-data__article-heading {
+  color: var(--white);
+}
+
+.destination-data__nav-list {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+}
+
+.destination-data__nav-list-item {
+  padding-bottom: 16px;
+}
+
+.destination-data__nav-list-item:hover {
+  border-bottom: 3px solid var(--gray);
+  color: var(--gray);
+}
+
+.destination-data__stats {
+  gap: 24px;
+}
+
+.destination-data__stat {
+  gap: 12px;
+}
+
+.destination-data__stat-value {
+  font: 28px 'Bellefair', sans-serif;
+  letter-spacing: 0;
 }
 
 /**

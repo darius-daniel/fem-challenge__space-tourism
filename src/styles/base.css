@@ -34,8 +34,21 @@ main > div {
   padding: 78px 0;
 }
 
+h1 {
+  text-transform: uppercase;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
 ul {
   list-style-type: none;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: #979797;
 }
 
 /**

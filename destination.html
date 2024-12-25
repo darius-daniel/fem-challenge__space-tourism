@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/svg" sizes="32x32" href="./shared/logo.svg">
+    <link rel="stylesheet" href="src/styles/main.css" />
+
+    <title>Space Tourism Website | Destination</title>
+</head>
+
+<body class="destination">
+    <header class="header">
+        <a href="/">
+            <img src="./shared/logo.svg" alt="Site logo" class="logo">
+        </a>
+        <nav class="nav text-preset-8">
+            <ul class="nav__nav">
+                <li><a href="/" class="nav__nav-link"><span class="nav__numbering">00</span> Home</a></li>
+                <li><a href="/destination" class="nav__nav-link"><span class="nav__numbering">01</span> Destination</a>
+                </li>
+                <li><a href="/crew" class="nav__nav-link"><span class="nav__numbering">02</span> Crew</a></li>
+                <li><a href="/technology" class="nav__nav-link"><span class="nav__numbering">03</span> Technology</a>
+                </li>
+            </ul>
+        </nav>
+        <img src="./shared/icon-hamburger.svg" alt="Menu Icon" class="hamburger-icon">
+    </header>
+
+    <main>
+        <h1 class="text-preset-6"><span class="numbering">01</span>Pick your destination</h1>
+        <section class="destination-data">
+            <img src="./destination/image-moon.png" alt="Moon" class="destination-data__image">
+            <div class="destination-data__details">
+                <nav class="destination-data__nav text-preset-8 uppercase">
+                    <ul class="destination-data__nav-list">
+                        <li class="destination-data__nav-list-item">Moon</li>
+                        <li class="destination-data__nav-list-item">Mars</li>
+                        <li class="destination-data__nav-list-item">Europa</li>
+                        <li class="destination-data__nav-list-item">Titan</li>
+                    </ul>
+                </nav>
+                <article class="destination-data__article">
+                    <h2 class="destination-data__article-heading text-preset-2 uppercase">Moon</h2>
+                    <p class="destination-data__article-desc text-preset-9">
+                        See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+                        regain perspective and come back refreshed. While you’re there, take in some history
+                        by visiting the Luna 2 and Apollo 11 landing sites.
+                    </p>
+                </article>
+                <hr>
+                <div class="destination-data__stats uppercase">
+                    <div class="destination-data__stat">
+                        <h2 class="destination-data__stat-heading text-preset-7">Avg. distance</h2>
+                        <p class="destination-data__stat-value destination-data__stat--distance text-preset-6">384,400
+                            km</p>
+                    </div>
+                    <div class="destination-data__stat">
+                        <h2 class="destination-data__stat-heading text-preset-7">Est. travel time</h2>
+                        <p class="destination-data__stat-value destination-data__stat--travel-time text-preset-6">3 days
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="src/scripts/header.js"></script>
+    <script type="text/javascript" src="src/scripts/destination.js"></script>
+</body>
+
+</html>

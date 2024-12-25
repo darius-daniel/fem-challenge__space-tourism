@@ -3,15 +3,26 @@
 @import url('components.css');
 /* @import url('states.css'); */
 
-.home {
-  background: url('/home/background-home-mobile.jpg') center / cover fixed
-    no-repeat;
+.home,
+.destination,
+.crew,
+.technology {
   color: var(--white);
 
   display: flex;
   flex-direction: column;
 
   position: relative;
+}
+
+.home {
+  background: url('/home/background-home-mobile.jpg') center / cover fixed
+    no-repeat;
+}
+
+.destination {
+  background: url('/destination/background-destination-mobile.jpg') center /
+    cover fixed no-repeat;
 }
 
 .logo {
@@ -27,6 +38,15 @@
   border-right: 3px solid var(--white);
 }
 
+.current-destination {
+  border-bottom: 3px solid var(--white);
+  color: var(--white);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
 /**
  * =======================================================================================
  * Tablet Styles
@@ -36,6 +56,11 @@
   .home {
     background: url('/home/background-home-tablet.jpg') center / cover fixed
       no-repeat;
+  }
+
+  .destination {
+    background: url('/destination/background-destination-tablet.jpg') center /
+      cover fixed no-repeat;
   }
 
   .active-link {
@@ -53,5 +78,10 @@
   .home {
     background: url('/home/background-home-desktop.jpg') center / cover fixed
       no-repeat;
+  }
+
+  .destination {
+    background: url('/destination/background-destination-desktop.jpg') center /
+      cover fixed no-repeat;
   }
 }
