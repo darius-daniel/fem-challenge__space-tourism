@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'Bellefair';
+    src: url('/fonts/Bellefair-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Barlow Regular', sans-serif;
+    src: url('/fonts/Barlow-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Barlow Condensed Regular';
+    src: url('/fonts/BarlowCondensed-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Barlow Condensed Medium';
+    src: url('/fonts/BarlowCondensed-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Barlow Condensed Bold';
+    src: url('/fonts/BarlowCondensed-Bold.ttf');
+}
+
+.text-preset-1 {
+    font: 80px 'Bellefair', sans-serif;
+}
+
+.text-preset-2 {
+    font: 56px 'Bellefair', sans-serif;
+}
+
+.text-preset-3 {
+    font: 24px 'Bellefair', sans-serif;
+}
+
+.text-preset-4 {
+    font: 18px 'Bellefair', sans-serif;
+}
+
+.text-preset-6, .text-preset-8 {
+    font-family: 'Barlow Condensed Regular', sans-serif;
+    letter-spacing: 0.15em;
+}
+
+.text-preset-6 {
+    font-size: 16px;
+}
+
+.text-preset-8 {
+    font-size: 14px;
+}
+
+.text-preset-9 {
+    font: 15px "Barlow Regular", sans-serif;
+    line-height: 180%;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+@media screen and (min-width: 601px) {
+    .text-preset-2 {
+        font-size: 80px;
+    }
+
+    .text-preset-3 {
+        font-size: 40px;
+    }
+
+    .text-preset-4 {
+        font-size: 24px;
+    }
+
+    .text-preset-5 {
+        font: 20px "Barlow Condensed Regular", sans-serif;
+        letter-spacing: 0.15em;
+    }
+
+    .text-preset-9 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .text-preset-1 {
+        font-size: 144px;
+    }
+
+    .text-preset-2 {
+        font-size: 96px;
+    }
+
+    .text-preset-3 {
+        font-size: 56px;
+    }
+
+    .text-preset-4 {
+        font-size: 32px;
+    }
+
+    .text-preset-5 {
+        font-size: 28px;
+        letter-spacing: 4px;
+    }
+
+    .text-preset-6 {
+        font-size: 28px
+    }
+
+    .text-preset-7,
+    .text-preset-8 {
+        letter-spacing: 2px;
+    }
+
+    .text-preset-7 {
+        font-size: 14px;
+    }
+
+    .text-preset-8 {
+        font-size: 16px;
+    }
+
+    .text-preset-8-bold {
+        font: 16px "Barlow Condensed Bold", sans-serif;
+        letter-spacing: 3px;
+    }
+
+    .text-preset-9 {
+        font-size: 18px;
+    }
+}

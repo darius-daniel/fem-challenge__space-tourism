@@ -1,0 +1,57 @@
+@import url('base.css');
+@import url('typography.css');
+@import url('components.css');
+/* @import url('states.css'); */
+
+.home {
+  background: url('/home/background-home-mobile.jpg') center / cover fixed
+    no-repeat;
+  color: var(--white);
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.hidden {
+  display: none;
+}
+
+.active-link {
+  border-right: 3px solid var(--white);
+}
+
+/**
+ * =======================================================================================
+ * Tablet Styles
+ * =======================================================================================
+ */
+@media screen and (min-width: 601px) {
+  .home {
+    background: url('/home/background-home-tablet.jpg') center / cover fixed
+      no-repeat;
+  }
+
+  .active-link {
+    border-right: none;
+    border-bottom: 3px solid var(--white);
+  }
+}
+
+/**
+ * =======================================================================================
+ * Desktop Styles
+ * =======================================================================================
+ */
+@media screen and (min-width: 1025px) {
+  .home {
+    background: url('/home/background-home-desktop.jpg') center / cover fixed
+      no-repeat;
+  }
+}
