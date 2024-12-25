@@ -123,6 +123,7 @@
 }
 
 /* Destination Route */
+
 .destination-data,
 .destination-data__details,
 .destination-data__stats,
@@ -198,6 +199,24 @@
     width: 272px;
     height: 272px;
   }
+
+  .destination--main {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 40px;
+  }
+
+  .destination-data__image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .destination-data__stats {
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 24px;
+  }
 }
 
 /**
@@ -218,5 +237,50 @@
   .hero__title,
   .hero__desc {
     text-align: left;
+  }
+
+  .destination--main {
+    padding: 48px 128px;
+  }
+
+  .destination-data {
+    flex-direction: row;
+    justify-content: center;
+    gap: 96px;
+  }
+
+  .destination-data__image {
+    width: 480px;
+    height: 480px;
+  }
+
+  .destination-data__details {
+    width: 30%;
+    align-items: flex-start;
+  }
+
+  .destination-data__article {
+    text-align: left;
+    width: 100%;
+  }
+
+  .destination-data__stats {
+    justify-content: flex-start;
+    gap: 48px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .non-landing-heading {
+    width: fit-content;
+  }
+
+  .non-landing-heading::after {
+    content: '';
+  }
+
+  .non-landing-heading,
+  .non-landing-heading::after {
+    align-self: space-evenly;
   }
 }

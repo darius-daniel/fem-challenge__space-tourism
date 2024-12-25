@@ -60,6 +60,10 @@ hr {
   main {
     padding: 128px;
   }
+
+  h1 {
+    justify-content: flex-start;
+  }
 }
 
 /**
