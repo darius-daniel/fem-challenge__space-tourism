@@ -25,6 +25,11 @@
     cover fixed no-repeat;
 }
 
+.crew {
+  background: url('/crew/background-crew-mobile.jpg') center / cover fixed
+    no-repeat;
+}
+
 .logo {
   width: 40px;
   height: 40px;
@@ -41,6 +46,10 @@
 .current-destination {
   border-bottom: 3px solid var(--white);
   color: var(--white);
+}
+
+.active-pagination-button {
+  background-color: var(--white);
 }
 
 .uppercase {
@@ -63,6 +72,11 @@
       cover fixed no-repeat;
   }
 
+  .crew {
+    background: url('/crew/background-crew-tablet.jpg') center / cover fixed
+      no-repeat;
+  }
+
   .active-link {
     border-right: none;
     border-bottom: 3px solid var(--white);
@@ -83,5 +97,10 @@
   .destination {
     background: url('/destination/background-destination-desktop.jpg') center /
       cover fixed no-repeat;
+  }
+
+  .crew {
+    background: url('/crew/background-crew-desktop.jpg') center / cover fixed
+      no-repeat;
   }
 }
