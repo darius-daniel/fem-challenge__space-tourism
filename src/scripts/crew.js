@@ -1,53 +1,52 @@
-fetch('./data.json')
-  .then((response) => response.json())
-  .then((data) => {
-    const paginationBtns = document.getElementsByClassName(
-      'crew-data__small-pagination'
-    )[0];
+function displayCurrentCrewMemberData(currentCrewMember) {
+    document.getElementsByClassName("crew-data__role")[0].innerText =
+        currentCrewMember.role;
+    document.getElementsByClassName("crew-data__name")[0].innerText =
+        currentCrewMember.name;
+    document.getElementsByClassName("crew-data__bio")[0].innerText =
+        currentCrewMember.bio;
+    document.getElementsByClassName("crew-data__image")[0].src =
+        currentCrewMember.images.png;
+    document.getElementsByClassName("crew-data__image")[0].alt =
+        `An Image of ${currentCrewMember.name}`;
+}
 
-    let newBtn;
-    let currentCrewMember = data.crew[0];
-    for (const crewMember of data.crew) {
-      newBtn = document.createElement('button');
-      newBtn.type = 'button';
-      newBtn.classList.add('crew-data__small-pagination-button');
-
-      newBtn.addEventListener('click', (event) => {
+function setActiveBtn(activeBtn) {
+    if (activeBtn) {
         document
-          .getElementsByClassName('active-pagination-button')[0]
-          .classList.remove('active-pagination-button');
-        event.target.classList.add('active-pagination-button');
-        document.getElementsByClassName('crew-data__role')[0].innerHTML =
-          crewMember.role;
-        document.getElementsByClassName('crew-data__name')[0].innerHTML =
-          crewMember.name;
-        document.getElementsByClassName('crew-data__bio')[0].innerHTML =
-          crewMember.bio;
-        document.getElementsByClassName('crew-data__image')[0].src =
-          crewMember.images.png;
-        document.getElementsByClassName(
-          'crew-data__image'
-        )[0].alt = `An Image of ${crewMember.name}`;
-      });
-
-      paginationBtns.appendChild(newBtn);
+            .getElementsByClassName("active-pagination-button")[0]
+            .classList.remove("active-pagination-button");
+        event.target.classList.add("active-pagination-button");
+    } else {
+        document
+            .getElementsByClassName("crew-data__small-pagination-button")[0]
+            .classList.add("active-pagination-button");
     }
+}
 
-    document.getElementsByClassName('crew-data__role')[0].innerHTML =
-      currentCrewMember.role;
-    document.getElementsByClassName('crew-data__name')[0].innerHTML =
-      currentCrewMember.name;
-    document.getElementsByClassName('crew-data__bio')[0].innerHTML =
-      currentCrewMember.bio;
-    document.getElementsByClassName('crew-data__image')[0].src =
-      currentCrewMember.images.png;
+fetch("./data.json")
+    .then((response) => response.json())
+    .then((data) => {
+        const paginationBtns = document.getElementsByClassName(
+            "crew-data__small-pagination",
+        )[0];
 
-    document
-      .getElementsByClassName('crew-data__small-pagination-button')[0]
-      .classList.add('active-pagination-button');
+        let newBtn;
+        let currentCrewMember = data.crew[0];
+        for (const crewMember of data.crew) {
+            newBtn = document.createElement("button");
+            newBtn.type = "button";
+            newBtn.classList.add("crew-data__small-pagination-button");
 
-    document.getElementsByClassName(
-      'crew-data__image'
-    )[0].alt = `An Image of ${crewMember.name}`;
-  })
-  .catch((error) => console.error(error.message));
+            newBtn.addEventListener("click", (event) => {
+                setActiveBtn(event);
+                displayCurrentCrewMemberData(crewMember);
+            });
+
+            paginationBtns.appendChild(newBtn);
+        }
+
+        displayCurrentCrewMemberData(currentCrewMember);
+        setActiveBtn(null);
+    })
+    .catch((error) => console.error(error.message));

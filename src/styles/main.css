@@ -7,53 +7,57 @@
 .destination,
 .crew,
 .technology {
-  color: var(--white);
+    color: var(--white);
 
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
-  position: relative;
+    position: relative;
 }
 
 .home {
-  background: url('/home/background-home-mobile.jpg') center / cover fixed
-    no-repeat;
+    background: url('/home/background-home-mobile.jpg') center / cover fixed no-repeat;
 }
 
 .destination {
-  background: url('/destination/background-destination-mobile.jpg') center /
+    background: url('/destination/background-destination-mobile.jpg') center /
     cover fixed no-repeat;
 }
 
 .crew {
-  background: url('/crew/background-crew-mobile.jpg') center / cover fixed
-    no-repeat;
+    background: url('/crew/background-crew-mobile.jpg') center / cover fixed no-repeat;
+}
+
+.technology {
+    background: url('/technology/background-technology-mobile.jpg') center / cover fixed no-repeat;
 }
 
 .logo {
-  width: 40px;
-  height: 40px;
+    width: 40px;
+    height: 40px;
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
 
 .active-link {
-  border-right: 3px solid var(--white);
+    border-right: 3px solid var(--white);
 }
 
 .current-destination {
-  border-bottom: 3px solid var(--white);
-  color: var(--white);
+    border-bottom: 3px solid var(--white);
+    color: var(--white);
 }
 
 .active-pagination-button {
-  background-color: var(--white);
+    background-color: var(--white);
+    color: var(--dark-blue);
+    border: none
 }
 
 .uppercase {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 /**
@@ -62,25 +66,28 @@
  * =======================================================================================
  */
 @media screen and (min-width: 601px) {
-  .home {
-    background: url('/home/background-home-tablet.jpg') center / cover fixed
-      no-repeat;
-  }
+    .home {
+        background: url('/home/background-home-tablet.jpg') center / cover fixed no-repeat;
+    }
 
-  .destination {
-    background: url('/destination/background-destination-tablet.jpg') center /
+    .destination {
+        background: url('/destination/background-destination-tablet.jpg') center /
       cover fixed no-repeat;
-  }
+    }
 
-  .crew {
-    background: url('/crew/background-crew-tablet.jpg') center / cover fixed
-      no-repeat;
-  }
+    .crew {
+        background: url('/crew/background-crew-tablet.jpg') center / cover fixed no-repeat;
+    }
 
-  .active-link {
-    border-right: none;
-    border-bottom: 3px solid var(--white);
-  }
+    .technology {
+        background: url('/technology/background-technology-tablet.jpg') center /
+      cover fixed no-repeat;
+    }
+
+    .active-link {
+        border-right: none;
+        border-bottom: 3px solid var(--white);
+    }
 }
 
 /**
@@ -89,18 +96,21 @@
  * =======================================================================================
  */
 @media screen and (min-width: 1025px) {
-  .home {
-    background: url('/home/background-home-desktop.jpg') center / cover fixed
-      no-repeat;
-  }
+    .home {
+        background: url('/home/background-home-desktop.jpg') center / cover fixed no-repeat;
+    }
 
-  .destination {
-    background: url('/destination/background-destination-desktop.jpg') center /
+    .destination {
+        background: url('/destination/background-destination-desktop.jpg') center /
       cover fixed no-repeat;
-  }
+    }
 
-  .crew {
-    background: url('/crew/background-crew-desktop.jpg') center / cover fixed
-      no-repeat;
-  }
+    .crew {
+        background: url('/crew/background-crew-desktop.jpg') center / cover fixed no-repeat;
+    }
+
+    .technology {
+        background: url('/technology/background-technology-desktop.jpg') center /
+      cover fixed no-repeat;
+    }
 }
