@@ -27,8 +27,6 @@ main {
 }
 
 main > div {
-  flex-grow: 1;
-
   display: flex;
   justify-content: center;
   padding: 78px 0;
@@ -63,6 +61,7 @@ hr {
 
   h1 {
     justify-content: flex-start;
+    align-items: center;
   }
 }
 
@@ -79,7 +78,8 @@ hr {
 
   main {
     flex-direction: row;
-    justify-content: space-between;
-    padding-top: 256px;
+    justify-content: center;
+    gap: 40px;
+    padding: 144px 48px;
   }
 }
