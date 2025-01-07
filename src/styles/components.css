@@ -104,7 +104,7 @@
 .hero__title span {
   color: var(--white);
   width: fit-content;
-  margin: auto
+  margin: auto;
 }
 
 .hero__desc {
@@ -191,6 +191,7 @@
     28px "Bellefair",
     sans-serif;
   letter-spacing: 0;
+  min-width: fit-content;
 }
 
 /* ==================== Crew Route ====================== */
@@ -418,8 +419,6 @@
     min-width: fit-content;
   }
 
-
-
   .destination__main {
     padding: 48px 128px;
   }
@@ -427,7 +426,7 @@
   .destination-data {
     flex-direction: row;
     justify-content: center;
-    gap: 96px;
+    gap: 24px;
   }
 
   .destination-data__image {
@@ -435,7 +434,7 @@
   }
 
   .destination-data__details {
-    width: 35%;
+    width: 45%;
     align-items: flex-start;
   }
 
