@@ -319,7 +319,7 @@
  * Tablet Styles
  * =======================================================================================
  */
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 681px) {
   .explore-btn {
     width: 272px;
     height: 272px;
@@ -394,9 +394,7 @@
     width: 56px;
     height: 56px;
   }
-}
 
-@media screen and (min-width: 641px) {
   .hamburger-icon,
   .mobile-menu {
     display: none;
@@ -412,7 +410,7 @@
  * Desktop Styles
  * =======================================================================================
  */
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1121px) {
   .nav {
     top: 40px;
     padding-left: 168px;
@@ -465,19 +463,17 @@
 
   .non-landing-heading {
     width: fit-content;
-    /*margin-left: 48px;*/
   }
 
   .crew__main {
-    padding: 0 128px;
-    margin-top: 88px;
+    padding: 88px 128px 88px 128px;
     gap: 144px;
   }
 
   .crew-data {
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .crew-data__role,
@@ -496,7 +492,7 @@
 
   .crew-data__small-pagination {
     gap: 40px;
-    margin-top: 48px;
+    margin-top: 96px;
     justify-content: flex-start;
   }
 
@@ -515,7 +511,7 @@
     display: flex;
     flex-direction: row-reverse;
     align-self: flex-end;
-    gap: 32px;
+    justify-content: space-between;
     margin: 128px 0;
     width: 90%;
     padding: 48px 0;
@@ -523,22 +519,19 @@
 
   .technology-details {
     flex-direction: row;
+    width: 40%;
     padding: 0;
   }
 
   .technology-details__nav {
     flex-direction: column;
-    margin-top: 48px;
-  }
-
-  .technology-details {
-    width: 50%;
   }
 
   .technology__image {
-    width: 50%;
+    position: relative;
+    width: 60%;
     clip-path: inset(5% 0 0 0);
-    margin-top: -128px;
+    top: 25px;
   }
 
   .large-pagination__btn {
@@ -549,11 +542,11 @@
 
   .technology-details,
   .technology-details__explanation {
-    align-items: flex-start;
+    align-self: flex-start;
   }
 
   .technology-details__explanation-desc {
-    width: 80%;
+    /* width: 80%;   */
     text-align: left;
     color: var(--light-blue);
   }

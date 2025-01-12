@@ -54,7 +54,7 @@ hr {
  * Tablet Styles
  * =======================================================================================
  */
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 681px) {
   main {
     padding: 128px;
   }
@@ -70,7 +70,7 @@ hr {
  * Desktop Styles
  * =======================================================================================
  */
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1121px) {
   header {
     padding-top: 60px;
     padding-left: 48px;

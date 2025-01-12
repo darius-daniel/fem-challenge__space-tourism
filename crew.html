@@ -1,72 +1,62 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" type="image/svg" sizes="32x32" href="/shared/logo.svg" />
-    <link rel="stylesheet" href="/src/styles/main.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Space Tourism Website | Destination</title>
-  </head>
+  <link rel="icon" type="image/svg" sizes="32x32" href="/shared/logo.svg" />
+  <link rel="stylesheet" href="/src/styles/main.css" />
 
-  <body class="crew">
-    <header class="header">
-      <a href="/">
-        <img src="/shared/logo.svg" alt="Site logo" class="logo" />
-      </a>
-      <nav class="nav text-preset-8">
-        <ul class="nav__nav">
-          <li>
-            <a href="/" class="nav__nav-link"
-              ><span class="nav__numbering">00</span> Home</a
-            >
-          </li>
-          <li>
-            <a href="/destination" class="nav__nav-link"
-              ><span class="nav__numbering">01</span> Destination</a
-            >
-          </li>
-          <li>
-            <a href="/crew" class="nav__nav-link"
-              ><span class="nav__numbering">02</span> Crew</a
-            >
-          </li>
-          <li>
-            <a href="/technology" class="nav__nav-link"
-              ><span class="nav__numbering">03</span> Technology</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <img
-        src="/shared/icon-hamburger.svg"
-        alt="Menu Icon"
-        class="hamburger-icon"
-      />
-    </header>
+  <title>Space Tourism Website | Destination</title>
+</head>
 
-    <main class="crew__main">
-      <h1 class="text-preset-6 non-landing-heading">
-        <span class="numbering">02</span>Meet your crew
-      </h1>
-      <section class="crew-data">
-        <div class="crew-data__article-container">
-          <article>
-            <h3 class="crew-data__role uppercase text-preset-4"></h3>
-            <h2 class="crew-data__name uppercase text-preset-3"></h2>
-            <p class="crew-data__bio text-preset-9"></p>
-          </article>
-          <div class="crew-data__small-pagination"></div>
-        </div>
-        <div class="crew-data__image-container">
-          <img src="" alt="A crew member's photo" class="crew-data__image" />
-          <div class="crew-data__image-overlay"></div>
-        </div>
-      </section>
-    </main>
+<body class="crew">
+  <header class="header">
+    <a href="/">
+      <img src="/shared/logo.svg" alt="Site logo" class="logo" />
+    </a>
+    <nav class="nav text-preset-8">
+      <ul class="nav__nav">
+        <li>
+          <a href="/" class="nav__nav-link"><span class="nav__numbering">00</span> Home</a>
+        </li>
+        <li>
+          <a href="/destination" class="nav__nav-link"><span class="nav__numbering">01</span> Destination</a>
+        </li>
+        <li>
+          <a href="/crew" class="nav__nav-link"><span class="nav__numbering">02</span> Crew</a>
+        </li>
+        <li>
+          <a href="/technology" class="nav__nav-link"><span class="nav__numbering">03</span> Technology</a>
+        </li>
+      </ul>
+    </nav>
+    <img src="/shared/icon-hamburger.svg" alt="Menu Icon" class="hamburger-icon" />
+  </header>
 
-    <script type="module" src="/src/scripts/header.js"></script>
-    <script type="module" src="/src/scripts/crew.js"></script>
-  </body>
+  <main class="crew__main">
+    <h1 class="text-preset-6 non-landing-heading">
+      <span class="numbering">02</span>Meet your crew
+    </h1>
+    <section class="crew-data">
+      <div class="crew-data__article-container">
+        <article>
+          <h3 class="crew-data__role uppercase text-preset-4"></h3>
+          <h2 class="crew-data__name uppercase text-preset-3"></h2>
+          <p class="crew-data__bio text-preset-9"></p>
+        </article>
+        <div class="crew-data__small-pagination"></div>
+      </div>
+      <div class="crew-data__image-container">
+        <img src="" alt="A crew member's photo" class="crew-data__image" />
+        <div class="crew-data__image-overlay"></div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="/src/scripts/header.js"></script>
+  <script type="module" src="/src/scripts/crew.js"></script>
+</body>
+
 </html>

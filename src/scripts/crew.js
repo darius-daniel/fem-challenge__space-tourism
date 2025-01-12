@@ -8,7 +8,6 @@ function displayCurrentCrewMemberData(currentCrewMember) {
   document.getElementsByClassName("crew-data__role")[0].innerText = role;
   document.getElementsByClassName("crew-data__name")[0].innerText = name;
   document.getElementsByClassName("crew-data__bio")[0].innerText = bio;
-  // imageContainer.style.background = `url(${png}) center / cover no-repeat`;
   document.getElementsByClassName('crew-data__image')[0].src = png;
 }
 
